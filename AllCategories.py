@@ -16,17 +16,16 @@ driver.get("https://myofer.co.il/malls/ramat-aviv/shopping-online/cat/All-Catego
 def click_button():
     try:
         # Locate the button by XPath and click it
-        button = driver.find_element(By.XPATH, '//*[@id="main-layer"]/div/main/div/div/div/div/div[4]/div[2]/div[3]/a[219]/a/button/span')
+        button = driver.find_element(By.XPATH, '//*[@id="main-layer"]/div/main/div/div/div/div/div[4]/div[2]/div[3]/a[224]/a/button')
         button.click()
-        print("Button clicked!")
     except NoSuchElementException:
         print("Button not found.")
 
-# Loop to click the button every 10 seconds
+# Loop to click the button every 2 seconds
 try:
     while True:
         click_button()
-        time.sleep(2)  # Delay for 10 seconds before next click
+        time.sleep(2)  # Delay for 2 seconds before next click
 except KeyboardInterrupt:
     print("Script interrupted by user.")
 
