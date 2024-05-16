@@ -16,7 +16,7 @@ driver.get("https://myofer.co.il/malls/ramat-aviv/shopping-online/cat/All-Catego
 def click_button():
     try:
         # Locate the button by XPath and click it
-        button = driver.find_element(By.XPATH, '//*[@id="main-layer"]/div/main/div/div/div/div/div[4]/div[2]/div[3]/a[215]/a/button')
+        button = driver.find_element(By.XPATH, '//*[@id="main-layer"]/div/main/div/div/div/div/div[4]/div[2]/div[3]/a[215]/a/button/span')
         button.click()
     except NoSuchElementException:
         print("Button not found.")
