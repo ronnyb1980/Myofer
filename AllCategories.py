@@ -5,14 +5,6 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 import time
 
-# Your Python code here
-# For example:
-driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-driver.get("http://example.com")
-time.sleep(5)
-driver.quit()
-
-
 # Setup Chrome WebDriver
 service = ChromeService(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service)
